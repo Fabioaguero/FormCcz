@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <title>Cadastro LIRAa</title>
+    
+</head>
+<body>
+    <div class="box">
+        <form action="" method="post">
+            <fieldset>
+                <legend><b>Cadastro LIRAa</b></legend>
+                
+                <div class="inputBox">
+                    <input type="text" name="quadra" id="nome" class="inputUser" required>
+                    <label for="nome" class="labelInput">Funcionário</label>
+                    </div>
+                
+                
+                <div class="inputBox">
+                    <input type="number" min="0" name="habitantes" id="habitantes" class="inputUser" required>
+                    <label for="habitantes" class="labelInput">Habitantes</label>
+                </div>
+                
+                <label for="data"><b>Data:</b></label>
+
+                <!--
+                <label *for*="Dia">Selecione o dia: </label>
+                
+                <input *type*="number" *min*="1" *max*="31" *name*="dia" *id*="dia" *required*>
+          <input *type*="button" *value*="proseguir" *onclick*="capdata()">
+                -->
+
+                <input type="date" name="data" id="data" required>
+                
+                <p><b>Possui armadilha:</b></p>
+                <input type="radio" id="sim" name="sim" value="sim" checked>
+                <label for="sim">Sim</label>
+                
+                <input type="radio" id="nao" name="sim" value="nao">
+                <label for="nao">Não</label>
+               
+
+                <div class="inputBox" class="gap">
+                  <input type="text" name="numer" id="number" class="inputUser" required>
+                  <label for="number" class="labelInput">Número da armadilha</label>
+                </div>
+                <div class="inputBox">
+                <input type="text" name="quadra" id="quadra" class="inputUser" required>
+                <label for="quadra" class="labelInput">Quarteirão</label>
+                </div>
+                <div class="inputBox">
+                <input type="text" name="area" id="area" class="inputUser" required>
+                <label for="area" class="labelInput">Área</label>
+                </div>
+                <br>
+    <div class="grid">
+                <p class="title aedes" ><b><i>Aedes aegypt</i></b></p> 
+
+                <div id="aedes" class="inputBox">
+                    <input type="number" min="0" value="0" name="aegyptMmorto" id="aegyptMmorto" class="inputUser" required>
+                    <label for="aegyptMmorto" class="labelInput">Macho morto</label>
+                </div>
+                
+                <div id="aedes" class="inputBox">
+                    <input type="number" min="0" value="0" name="aegyptMvivo" id="aegyptMvivo" class="inputUser" required>
+                    <label for="aegyptMvivo" class="labelInput">Macho vivo</label>
+                </div>
+
+                <div id="aedes" class="inputBox">
+                    <input type="number" min="0" value="0" name="aegypt" id="aegypt" class="inputUser" required>
+                    <label for="aegypt" class="labelInput">Total de Depósito Aedes aegypt</label>
+                </div>
+
+                <div id="aedes" class="inputBox">
+                    <input type="number" min="0" value="0" name="aegyptFviva" id="aegyptFviva" class="inputUser" required>
+                    <label for="aegyptFviva" class="labelInput">Femea viva</label>
+                </div>
+
+                <div id="aedes" class="inputBox">
+                    <input type="number" min="0" value="0" name="aegyptFmorta" id="aegyptFmorta" class="inputUser" required>
+                    <label for="aegyptFmorta" class="labelInput">Femea morta</label>
+                </div>
+                
+                <p class="title albopictus"><b><i>Aedes albopictus</i></b></p>
+
+                <div class="inputBox" id="albopictus">
+                    <input type="number" min="0" value="0" name="albopictusMmorto" id="albopictusMmorto" class="inputUser" required>
+                    <label for="albopictusMmorto" class="labelInput">Macho morto</label>
+                </div>
+                
+                <div class="inputBox" id="albopictus">
+                    <input type="number" min="0" value="0" name="albopictusMvivo" id="albopictusMvivo" class="inputUser" required>
+                    <label for="albopictusMvivo" class="labelInput">Macho vivo</label>
+                </div>
+                
+                <div class="inputBox" id="albopictus">
+                    <input type="number" min="0" value="0" name="albopictus" id="albopictus" class="inputUser" required>
+                    <label for="albopictus" class="labelInput">Total de Depósito Aedes albopictus</label>
+                </div>
+                
+                <div class="inputBox" id="albopictus">
+                    <input type="number" min="0" value="0" name="albopictusFviva" id="albopictusFviva" class="inputUser" required>
+                    <label for="albopictusFviva" class="labelInput">Femea viva</label>
+                </div>
+                
+                <div class="inputBox" id="albopictus">
+                    <input type="number" min="0" value="0" name="albopictusFmorta" id="albopictusFmorta" class="inputUser" required>
+                    <label for="albopictusFmorta" class="labelInput">Femea morta</label>
+                </div>
+                
+     
+                <p class="title outros"><b><i>Outros</i></b></p>
+
+                <div class="inputBox" id="outros">
+                    <input type="number" min="0" value="0" name="outrosMmorto" id="outrosMmorto" class="inputUser" required>
+                    <label for="outrosMmorto" class="labelInput">Macho morto</label>
+                </div>
+                
+                <div class="inputBox" id="outros">
+                    <input type="number" min="0" value="0" name="outrosMvivo" id="outrosMvivo" class="inputUser" required>
+                    <label for="outrosMvivo" class="labelInput">Macho vivo</label>
+                </div>
+           
+                <div class="inputBox" id="outros">
+                    <input type="number" min="0" value="0" name="outros" id="outros" class="inputUser" required>
+                    <label for="outros" class="labelInput">Total de Depósito outros</label>
+                </div>
+               
+                <div class="inputBox" id="outros">
+                    <input type="number" min="0" value="0" name="outrosFviva" id="outrosFviva" class="inputUser" required>
+                    <label for="outrosFviva" class="labelInput">Femea viva</label>
+                </div>
+               
+                <div class="inputBox" id="outros">
+                    <input type="number" min="0" value="0" name="outrosFmorta" id="outrosFmorta" class="inputUser" required>
+                    <label for="outrosFmorta" class="labelInput">Femea morta</label>
+                </div>
+            </div>
+         
+                <div class="inputBox">
+                    <input type="text" name="amostra" id="amostra" class="inputUser" required>
+                    <label for="amostra" class="labelInput">Número Amostra</label>
+                </div>
+                
+                <p><b><i>Detecção Viral</i></b></p><br>
+
+                <div class="check">
+                  <label for="dengue">Dengue</label>
+                  <input type="checkbox" name="dengue" id="dengue">
+                  <label for="zika">Zika</label>
+                  <input type="checkbox" name="zika" id="zika">
+                  <label for="chikungunya">Chikungunya</label>
+                  <input type="checkbox" name="chikungunya" id="chikungunya">
+                </div>
+                <br>
+                <br>
+               
+
+               
+                <input type="submit" name="submit" id="submit">
+            </div>
+            </fieldset>
+        </form>
+    </div>
+
+
+    <script src="/script/data.js"></script>
+</body>
+</html>
