@@ -73,7 +73,7 @@ legend {
   letter-spacing: 2px;
 }
 
-.grid .aedes label {
+.grid .aedes {
   color: burlywood;
 }
 
@@ -81,7 +81,7 @@ legend {
   color: rgba(222, 184, 135, 0.65)
 }
 
-.grid .albopictus label {
+.grid .albopictus {
   color: aquamarine;
 }
 
@@ -89,7 +89,7 @@ legend {
   color: rgba(127, 255, 212, 0.65);
 }
 
-.grid .outros label {
+.grid .outros {
   color: darkgrey;
 }
 
